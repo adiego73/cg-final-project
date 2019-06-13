@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <title>Computer Graphics Final Project - Museum</title>
+    <script src="lib/webgl-obj-loader.min.js"></script>
+    <script src="lib/model.js"></script>
+    <script src="lib/textures.js"></script>
+    <script src="lib/utils.js"></script>
+    <script src="lib/app.js"></script>
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: azure;
+            font-family: "Clear Sans", Arial, sans-serif;
+        }
+
+        body > div {
+            display: table-row;
+        }
+
+        body > div > div:first-child {
+            width: 810px;
+            display: table-cell;
+        }
+
+        canvas {
+            background-color: white;
+            width: 800px;
+            height: 600px;
+        }
+
+        body > div > div:last-child {
+            display: table-cell;
+            position: relative;
+            width: 90%;
+            padding-left: 15px
+        }
+
+        body > div > div:last-child > div {
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        body > div > div:last-child > div > span {
+            font-size: x-large;
+            text-decoration-line: underline;
+            font-weight: bold;
+        }
+
+        li > span:first-child {
+            font-weight: normal;
+            text-decoration-line: underline;
+        }
+
+        li > span:last-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onLoad="main();">
+
+<div>
+    <div>
+        <canvas id="my-canvas">
+            Your browser doesn't support the Canvas Element!
+        </canvas>
+    </div>
+    <div>
+        <div>
+            <span>Controls</span>
+            <ul>
+                <li><span>Forward:</span>&nbsp;<span>W</span></li>
+                <li><span>Backward:</span>&nbsp;<span>S</span></li>
+                <li><span>Turn Left:</span>&nbsp;<span>A</span></li>
+                <li><span>Turn Right:</span>&nbsp;<span>D</span></li>
+                <li><span>Info:</span>&nbsp;<span>I</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
