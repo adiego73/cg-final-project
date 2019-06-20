@@ -4,10 +4,8 @@
     <title>Computer Graphics Final Project - Museum</title>
     <script src="lib/webgl-obj-loader.min.js"></script>
     <script src="lib/quaternion.min.js"></script>
-    <script src="lib/model.js"></script>
     <script src="lib/textures.js"></script>
     <script src="lib/utils.js"></script>
-    <script src="lib/shaders.js"></script>
     <script src="lib/app.js"></script>
     <style type="text/css">
         body {
@@ -27,8 +25,6 @@
 
         canvas {
             background-color: white;
-            width: 800px;
-            height: 600px;
         }
 
         body > div > div:last-child {
@@ -63,7 +59,7 @@
 
 <div>
     <div>
-        <canvas id="my-canvas">
+        <canvas id="my-canvas" width="1024" height="768">
             Your browser doesn't support the Canvas Element!
         </canvas>
     </div>
