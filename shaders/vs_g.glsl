@@ -43,7 +43,7 @@ vec4 lightModel(int lt, vec3 pos) {
 	} else if(lt == 3) {	//Point light (decay)
 		float lLen = length(lightPosition - pos);
 		nLightDir = normalize(lightPosition - pos);
-		lDim = 160.0 / (lLen * lLen);
+		lDim = 5.0 / (lLen * lLen); //160
 	} else if(lt == 4) {	//Spot light
 		nLightDir = normalize(lightPosition - pos);
 		lCone = -dot(nLightDir, normalize(lightDirection));
@@ -64,7 +64,7 @@ void main() {
 	fsUVs = inUVs;
 	fsUV2s = inUV2s;
 	gl_Position = wvpMatrix * vec4(inPosition, 1.0);
-	
+
 	vec3 nEyeDirection = normalize(eyePosition - inPosition);
 	vec3 nNormal = normalize(inNormal);
 	
@@ -75,19 +75,16 @@ void main() {
 	
 	//Computing the ambient light contribution (Without the texture contribution)
 	vec4 ambLight = ambientLightColor * ambientLightInfluence;
-	if(lightType == 5){
-		goureaudSpecular = vec4(0.0, 0.0, 0.0, 0.0);
-		goureaudDiffuseAndAmbient = vec4(1.0, 1.0, 1.0, 1.0);
-	}else {
-		//Computing the diffuse component of light (Without the texture contribution)
-		vec4 diffuse = lightColor * clamp(dot(nlightDirection, nNormal), 0.0, 1.0) * lightDimension;	
-		
-		//Reflection vector for Phong model
-		vec3 reflection = -reflect(nlightDirection, nNormal);	
-		vec4 specular = mSpecColor * lightColor * pow(clamp(dot(reflection, nEyeDirection),0.0, 1.0), mSpecPower) * lightDimension;
-			
-		goureaudSpecular = specular;
-		goureaudDiffuseAndAmbient = diffuse + ambLight;
-	}
+
+    //Computing the diffuse component of light (Without the texture contribution)
+    vec4 diffuse = lightColor * clamp(dot(nlightDirection, nNormal), 0.0, 1.0) * lightDimension;
+
+    //Reflection vector for Phong model
+    vec3 reflection = -reflect(nlightDirection, nNormal);
+    vec4 specular = mSpecColor * lightColor * pow(clamp(dot(reflection, nEyeDirection),0.0, 1.0), mSpecPower) * lightDimension;
+
+    goureaudSpecular = specular;
+    goureaudDiffuseAndAmbient = diffuse + ambLight;
+
 	
 }
