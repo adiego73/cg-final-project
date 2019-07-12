@@ -1,0 +1,134 @@
+# Blender MTL File: 'infoObjects.blend'
+# Material Count: 11
+
+newmtl Manet_Dejeuner
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/Manet_Dejeuner.png
+map_d info/Manet_Dejeuner.png
+
+newmtl Matisse_theDance
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/Matisse_theDance.png
+map_d info/Matisse_theDance.png
+
+newmtl Monet-Sunrise
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/Monet-Sunrise.png
+map_d info/Monet-Sunrise.png
+
+newmtl Munch_Scream
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/Munch_Scream.png
+map_d info/Munch_Scream.png
+
+newmtl Picasso_Guernica
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/Picasso_Guernica.png
+map_d info/Picasso_Guernica.png
+
+newmtl Seurat_a_sunday
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/Seurat_a_sunday.png
+map_d info/Seurat_a_sunday.png
+
+newmtl VanGogh_self
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/VanGogh_self.png
+map_d info/VanGogh_self.png
+
+newmtl Volpedo_FourthEstate
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/Volpedo_FourthEstate.png
+map_d info/Volpedo_FourthEstate.png
+
+newmtl pisarro_boulevard_monmarte
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/pisarro_boulevard_monmarte.png
+map_d info/pisarro_boulevard_monmarte.png
+
+newmtl starringNight
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/starringNight.png
+map_d info/starringNight.png
+
+newmtl theBathers_Cezanne
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd info/theBathers_Cezanne.png
+map_d info/theBathers_Cezanne.png
