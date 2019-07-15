@@ -22,27 +22,20 @@
         }
 
         body > div > div:first-child {
-            width: 810px;
-            display: table-cell;
+            float: left;
         }
 
         canvas {
             background-color: white;
         }
 
-        body > div > div:last-child {
-            display: table-cell;
-            position: relative;
-            width: 90%;
-            padding-left: 15px
-        }
-
-        body > div > div:last-child > div {
-            position: absolute;
+        #controls {
+            float: left;
+            padding-left: 15px;
             margin-top: 10px;
         }
 
-        body > div > div:last-child > div > span {
+        #controls > span {
             font-size: x-large;
             text-decoration-line: underline;
             font-weight: bold;
@@ -56,6 +49,9 @@
         li > span:last-child {
             font-weight: bold;
         }
+        #clear {
+            clear: both;
+        }
     </style>
 </head>
 <body onLoad="main();">
@@ -66,18 +62,19 @@
             Your browser doesn't support the Canvas Element!
         </canvas>
     </div>
-    <div>
-        <div>
-            <span>Controls</span>
-            <ul>
-                <li><span>Forward:</span>&nbsp;<span>W</span></li>
-                <li><span>Backward:</span>&nbsp;<span>S</span></li>
-                <li><span>Turn Left:</span>&nbsp;<span>A</span></li>
-                <li><span>Turn Right:</span>&nbsp;<span>D</span></li>
-                <li><span>Info:</span>&nbsp;<span>I</span></li>
-            </ul>
-        </div>
+    <div id="controls">
+        <span>Controls</span>
+        <ul>
+            <li><span>Forward:</span>&nbsp;<span>W</span></li>
+            <li><span>Backward:</span>&nbsp;<span>S</span></li>
+            <li><span>Turn Left:</span>&nbsp;<span>A</span></li>
+            <li><span>Turn Right:</span>&nbsp;<span>D</span></li>
+            <li><span>Look up:</span>&nbsp;<span>UP &uarr;</span></li>
+            <li><span>Look down:</span>&nbsp;<span>DOWN &darr;</span></li>
+            <li><span>Info:</span>&nbsp;<span>I</span></li>
+        </ul>
     </div>
+    <div id="clear"></div>
 </div>
 
 </body>
