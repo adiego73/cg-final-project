@@ -43,7 +43,7 @@ vec4 lightModel(int lt, vec3 pos) {
 	} else if(lt == 3) {	//Point light (decay)
 		float lLen = length(lightPosition - pos);
 		nLightDir = normalize(lightPosition - pos);
-		lDim = 5.0 / (lLen * lLen); //160
+		lDim = pow(1.0 / length(lightPosition - pos), 0);
 	} else if(lt == 4) {	//Spot light
 		nLightDir = normalize(lightPosition - pos);
 		lCone = -dot(nLightDir, normalize(lightDirection));
