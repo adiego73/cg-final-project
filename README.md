@@ -11,3 +11,6 @@ Design of a virtual tour inside of a museum with paintings and sculptures in fir
 ### Students
  * Diego E. Avila ([@adiego73](http://github.com/adiego73))
  * Mateo Vanoy ([@MateoVM](https://github.com/MateoVM))
+
+### Demo
+A demo of the project can be seen [here](https://adiego73.github.io/cg-final-project/)
